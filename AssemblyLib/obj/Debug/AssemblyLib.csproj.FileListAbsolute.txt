@@ -1,0 +1,6 @@
+C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyLib\bin\Debug\AssemblyLib.dll
+C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyLib\bin\Debug\AssemblyLib.pdb
+C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyLib\obj\Debug\AssemblyLib.csproj.AssemblyReference.cache
+C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyLib\obj\Debug\AssemblyLib.csproj.CoreCompileInputs.cache
+C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyLib\obj\Debug\AssemblyLib.dll
+C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyLib\obj\Debug\AssemblyLib.pdb
