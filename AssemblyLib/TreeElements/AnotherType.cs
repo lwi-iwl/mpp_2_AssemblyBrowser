@@ -28,8 +28,11 @@ namespace AssemblyLib.TreeElements
         
         public string FullName { get; private set; }
 
+        public int HashCode { get; private set; }
+
         public AnotherType(Type type)
         {
+            HashCode = type.GetHashCode();
             Name = type.Name;
             Fields = new List<Field>();
             Methods = new List<Method>();
@@ -38,6 +41,7 @@ namespace AssemblyLib.TreeElements
             SetTypeName(type);
             SetModifier(type);
             SetAccessModifier(type);
+            
             List<FieldInfo> fields = type.GetFields(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Static 
                                                     | BindingFlags.Public).Where
                                                     (x=>!x.Name.Contains("Backing")).ToList();
@@ -51,7 +55,6 @@ namespace AssemblyLib.TreeElements
             {
                 Fields.Add(new Field(field));
             }
-
             foreach (ConstructorInfo constructor in constructors)
             {   
                 Constructors.Add(new Constructor(constructor));
@@ -61,14 +64,11 @@ namespace AssemblyLib.TreeElements
             {
                 Methods.Add(new Method(method));
             }
-
             foreach (PropertyInfo property in properties)
             {
                 Properties.Add(new Property(property));
             }
-
             FullName = AccessModifier + " " + Modifier + " " + DataType + " " + Name;
-            MessageBox.Show(FullName);
         }
 
         private void SetTypeName(Type type)

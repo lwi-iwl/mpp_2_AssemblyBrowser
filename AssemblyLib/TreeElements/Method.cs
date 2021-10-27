@@ -21,10 +21,13 @@ namespace AssemblyLib.TreeElements
         public string DataType { get; private set; }
         
         public string FullName { get; private set; }
-        
+
+        public int HashCode { get; private set; }
+
 
         public Method(MethodInfo methodInfo)
         {
+            HashCode = methodInfo.GetHashCode();
             Name = methodInfo.Name;
             List<ParameterInfo> parameters = methodInfo.GetParameters().ToList();
             MethodParameters = "(";

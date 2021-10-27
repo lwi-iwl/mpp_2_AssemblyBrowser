@@ -38,14 +38,17 @@ namespace AssemblyLib.TreeElements
         private void SetModifier(PropertyInfo propertyInfo)
         {
             Modifier = "";
-            if (propertyInfo.GetAccessors()[0].IsFinal)
-                Modifier = Modifier + "final";
-            if (propertyInfo.GetAccessors()[0].IsAbstract)
-                Modifier = Modifier + "abstract";
-            if (propertyInfo.GetAccessors()[0].IsStatic)
-                Modifier = Modifier + "static";
-            if (propertyInfo.GetAccessors()[0].IsVirtual)
-                Modifier = Modifier + " virtual";
+            if (propertyInfo.GetAccessors().Length != 0)
+            {
+                if (propertyInfo.GetAccessors()[0].IsFinal)
+                    Modifier = Modifier + "final";
+                if (propertyInfo.GetAccessors()[0].IsAbstract)
+                    Modifier = Modifier + "abstract";
+                if (propertyInfo.GetAccessors()[0].IsStatic)
+                    Modifier = Modifier + "static";
+                if (propertyInfo.GetAccessors()[0].IsVirtual)
+                    Modifier = Modifier + " virtual";
+            }
         }
 
         private void SetAccessModifier(PropertyInfo propertyInfo)
