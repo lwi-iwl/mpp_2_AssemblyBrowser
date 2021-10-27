@@ -42,6 +42,7 @@
         <Compile Include="AssemblyCollector.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="TreeElements\AnotherType.cs" />
+        <Compile Include="TreeElements\Constructor.cs" />
         <Compile Include="TreeElements\Field.cs" />
         <Compile Include="TreeElements\Method.cs" />
         <Compile Include="TreeElements\NameSpace.cs" />

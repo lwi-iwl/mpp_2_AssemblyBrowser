@@ -31,12 +31,10 @@ namespace AssemblyLib
                     NameSpace tempSpace = new NameSpace(type);
                     tempSpace.AnotherTypes.Add(new AnotherType(type));
                     NameSpaces.Add(tempSpace);
-                    MessageBox.Show(type.FullName);
                 }
                 else
                 {
                     nameSpace.AnotherTypes.Add(new AnotherType(type));
-                    MessageBox.Show(type.FullName);
                 }
         }
             return NameSpaces;
