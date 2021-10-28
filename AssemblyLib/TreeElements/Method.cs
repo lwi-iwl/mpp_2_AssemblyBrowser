@@ -20,7 +20,7 @@ namespace AssemblyLib.TreeElements
 
         public string DataType { get; private set; }
         
-        public string FullName { get; private set; }
+        public string FullName { get; set; }
 
         public int HashCode { get; private set; }
 

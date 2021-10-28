@@ -20,7 +20,7 @@ namespace AssemblyLib.TreeElements
         public string FullName { get; private set; }
         public Constructor(ConstructorInfo constructorInfo)
         {
-            Name = constructorInfo.Name;
+            Name = constructorInfo.Name + " " + constructorInfo.DeclaringType.Name;
             List<ParameterInfo> parameters = constructorInfo.GetParameters().ToList();
             ConstructorParameters = "(";
             foreach (ParameterInfo parameter in parameters)

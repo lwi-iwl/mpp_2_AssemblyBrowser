@@ -8,7 +8,7 @@
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new Model();
+            DataContext = new ViewModel();
         }
     }
 }

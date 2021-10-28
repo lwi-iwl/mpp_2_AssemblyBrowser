@@ -16,3 +16,4 @@ C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyBrowser\obj\Debug\AssemblyB
 C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyBrowser\obj\Debug\AssemblyBrowser.csproj.CopyComplete
 C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyBrowser\obj\Debug\AssemblyBrowser.exe
 C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyBrowser\obj\Debug\AssemblyBrowser.pdb
+C:\Users\nikst\RiderProjects\AssemblyBrowser\AssemblyBrowser\obj\Debug\GeneratedInternalTypeHelper.g.cs

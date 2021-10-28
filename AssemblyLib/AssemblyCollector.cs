@@ -47,21 +47,41 @@ namespace AssemblyLib
                 select method).ToList();
             foreach (MethodInfo extensionmethod in methods)
             {
-                foreach (NameSpace nameSpace in NameSpaces)
+                NameSpace nameSpace =
+                    NameSpaces.Find(x => x.Name == extensionmethod.GetParameters()[0].ParameterType.Namespace);
+                if (nameSpace != null)
                 {
-                    nameSpace.AnotherTypes.Find(x => x.HashCode == extensionmethod.DeclaringType.GetHashCode()).
-                    Methods.RemoveAll(x => x.HashCode == extensionmethod.GetHashCode());
-                    
-                    AnotherType anotherType= nameSpace.AnotherTypes.Find(x =>
+                    AnotherType anotherType = nameSpace.AnotherTypes.Find(x =>
                         x.HashCode == extensionmethod.GetParameters()[0].ParameterType.GetHashCode());
                     if (anotherType != null)
                     {
                         anotherType.Methods.Add(new Method(extensionmethod));
+                        anotherType.Methods.Last().FullName = "Extension method" + anotherType.Methods.Last().FullName;
                     }
-                    else
+                }
+                else
+                {
+                    NameSpace tempNameSpace = new NameSpace(extensionmethod.GetParameters()[0].ParameterType);
+                    AnotherType extensionType = new AnotherType(extensionmethod.GetParameters()[0].ParameterType);
+                    extensionType.Constructors.Clear();
+                    extensionType.Properties.Clear();
+                    extensionType.Fields.Clear();
+                    extensionType.Methods.Clear();
+                    extensionType.Methods.Add(new Method(extensionmethod));
+                    extensionType.Methods.Last().FullName = "Extension method " + extensionType.Methods.Last().FullName;
+                    NameSpaces.Add(tempNameSpace);
+                    tempNameSpace.AnotherTypes.Add(extensionType);
+                }
+
+                foreach (NameSpace tempNameSpace in NameSpaces)
+                {
+                    AnotherType tempType =
+                        tempNameSpace.AnotherTypes.Find(x => x.HashCode == extensionmethod.DeclaringType.GetHashCode());
+                    if (tempType != null)
                     {
-                        nameSpace.AnotherTypes.Add(new AnotherType(extensionmethod.GetParameters()[0].ParameterType));
+                        tempType.Methods.RemoveAll(x => x.HashCode == extensionmethod.GetHashCode());
                     }
+                        
                 }
             }
             

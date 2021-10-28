@@ -65,7 +65,10 @@
         </Compile>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Model.cs" />
+        <Compile Include="Tree\TreeElements\TreeNameSpace.cs" />
+        <Compile Include="Tree\TreeElements\NameSpaceElements\TreeType.cs" />
+        <Compile Include="Tree\TreeElements\NameSpaceElements\TypeElements\Element.cs" />
+        <Compile Include="ViewModel.cs" />
         <Compile Include="Properties\AssemblyInfo.cs">
             <SubType>Code</SubType>
         </Compile>
