@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowser", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyLib", "AssemblyLib\AssemblyLib.csproj", "{051DD988-2D14-4C1B-84EE-B61D8CABF732}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject3", "TestProject3\TestProject3.csproj", "{C052DA4F-24E6-47D3-8FDD-498A8500EF54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{051DD988-2D14-4C1B-84EE-B61D8CABF732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{051DD988-2D14-4C1B-84EE-B61D8CABF732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{051DD988-2D14-4C1B-84EE-B61D8CABF732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C052DA4F-24E6-47D3-8FDD-498A8500EF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C052DA4F-24E6-47D3-8FDD-498A8500EF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C052DA4F-24E6-47D3-8FDD-498A8500EF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C052DA4F-24E6-47D3-8FDD-498A8500EF54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

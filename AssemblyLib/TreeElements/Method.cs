@@ -44,7 +44,7 @@ namespace AssemblyLib.TreeElements
             SetAccessModifier(methodInfo);
             DataType = "";
             SetDataType(methodInfo.ReturnType);
-            FullName = AccessModifier + " " + Modifier + " " + DataType + " " + Name + MethodParameters;
+            FullName = AccessModifier + Modifier + " " + DataType + " " + Name + MethodParameters;
         }
         
         private void SetParameters(Type temptype)
@@ -72,11 +72,11 @@ namespace AssemblyLib.TreeElements
         {
             Modifier = "";
             if (methodInfo.IsFinal)
-                Modifier = Modifier + "final";
+                Modifier = Modifier + " final";
             if (methodInfo.IsAbstract)
-                Modifier = Modifier + "abstract";
+                Modifier = Modifier + " abstract";
             if (methodInfo.IsStatic)
-                Modifier = Modifier + "static";
+                Modifier = Modifier + " static";
             if (methodInfo.IsVirtual)
                 Modifier = Modifier + " virtual";
         }

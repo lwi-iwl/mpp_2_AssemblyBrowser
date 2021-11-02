@@ -21,15 +21,13 @@ namespace AssemblyLib.TreeElements
         
         public string FullName { get; private set; }
 
-        public string Parameters { get; private set; }
-
         public Field(FieldInfo fieldInfo)
         {
             Name = fieldInfo.Name;
             SetTypeName(fieldInfo);
             SetModifier(fieldInfo);
             SetAccessModifier(fieldInfo);
-            FullName = AccessModifier + " " + Modifier + " " + DataType + " " + Name;
+            FullName = AccessModifier + Modifier + " " + DataType + " " + Name;
         }
         
         
@@ -63,7 +61,7 @@ namespace AssemblyLib.TreeElements
         {
             Modifier = "";
             if (fieldInfo.IsStatic)
-                Modifier = Modifier + "static";
+                Modifier = Modifier + " static";
             if (fieldInfo.IsInitOnly)
                 Modifier = Modifier + " readonly";
         }

@@ -68,7 +68,7 @@ namespace AssemblyLib.TreeElements
             {
                 Properties.Add(new Property(property));
             }
-            FullName = AccessModifier + " " + Modifier + " " + DataType + " " + Name;
+            FullName = AccessModifier + Modifier + " " + DataType + " " + Name;
         }
 
         private void SetTypeName(Type type)
@@ -89,7 +89,7 @@ namespace AssemblyLib.TreeElements
         {
             Modifier = "";
             if (type.IsAbstract && type.IsSealed)
-                Modifier = Modifier + "static";
+                Modifier = Modifier + " static";
             if (type.IsAbstract)
                 Modifier = Modifier + " abstract";
         }

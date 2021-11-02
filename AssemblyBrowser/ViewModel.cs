@@ -31,17 +31,17 @@ namespace AssemblyBrowser
                 return _loadCommand ??
                        (_loadCommand = new Command(obj =>
                        {
-                           //try
-                           //{
+                           try
+                           {
                                OpenFileDialog openFileDialog = new OpenFileDialog();
                                if (openFileDialog.ShowDialog() == true)
                                    NameSpaces = AssemblyCollector.getTree(openFileDialog.FileName);
                                newTree(NameSpaces);
-                           //}
-                           //catch (Exception e)
-                           //{
-                           //    MessageBox.Show(e.Message);
-                           //}
+                           }
+                           catch (Exception e)
+                           {
+                               MessageBox.Show(e.Message);
+                           }
                        }));
             }
         }

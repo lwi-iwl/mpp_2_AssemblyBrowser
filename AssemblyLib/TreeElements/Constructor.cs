@@ -34,7 +34,7 @@ namespace AssemblyLib.TreeElements
             ConstructorParameters = ConstructorParameters + ")";
             SetModifier(constructorInfo);
             SetAccessModifier(constructorInfo);
-            FullName = AccessModifier + " " + Modifier + " " + ConstructorParameters + " " + Name;
+            FullName = AccessModifier + Modifier + " " + ConstructorParameters + " " + Name;
         }
         
         private void SetParameters(Type temptype)
@@ -60,11 +60,11 @@ namespace AssemblyLib.TreeElements
         {
             Modifier = "";
             if (constructorInfo.IsFinal)
-                Modifier = Modifier + "final";
+                Modifier = Modifier + " final";
             if (constructorInfo.IsAbstract)
-                Modifier = Modifier + "abstract";
+                Modifier = Modifier + " abstract";
             if (constructorInfo.IsStatic)
-                Modifier = Modifier + "static";
+                Modifier = Modifier + " static";
             if (constructorInfo.IsVirtual)
                 Modifier = Modifier + " virtual";
         }
