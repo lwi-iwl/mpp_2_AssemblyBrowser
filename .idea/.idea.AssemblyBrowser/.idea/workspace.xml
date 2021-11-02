@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3ebe138-c089-4f56-b38a-737b8f7c9293" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/ViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser/ViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/bin/Debug/AssemblyBrowser.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser/bin/Debug/AssemblyBrowser.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/bin/Debug/AssemblyBrowser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser/bin/Debug/AssemblyBrowser.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/bin/Debug/AssemblyLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser/bin/Debug/AssemblyLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/bin/Debug/AssemblyLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser/bin/Debug/AssemblyLib.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/obj/Debug/AssemblyBrowser.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser/obj/Debug/AssemblyBrowser.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/obj/Debug/AssemblyBrowser.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser/obj/Debug/AssemblyBrowser.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyBrowser/obj/Debug/AssemblyBrowser.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyBrowser/obj/Debug/AssemblyBrowser.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyLib/TreeElements/AnotherType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyLib/TreeElements/AnotherType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyLib/TreeElements/Constructor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyLib/TreeElements/Constructor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyLib/TreeElements/Field.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyLib/TreeElements/Field.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyLib/TreeElements/Method.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyLib/TreeElements/Method.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyLib/bin/Debug/AssemblyLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyLib/bin/Debug/AssemblyLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyLib/bin/Debug/AssemblyLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyLib/bin/Debug/AssemblyLib.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyLib/obj/Debug/AssemblyLib.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyLib/obj/Debug/AssemblyLib.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssemblyLib/obj/Debug/AssemblyLib.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AssemblyLib/obj/Debug/AssemblyLib.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AssemblyBrowser/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +73,8 @@
       <workItem from="1635324980706" duration="48007000" />
       <workItem from="1635585195122" duration="143000" />
       <workItem from="1635585515170" duration="464000" />
-      <workItem from="1635841136574" duration="6865000" />
+      <workItem from="1635841136574" duration="7658000" />
+      <workItem from="1635856124038" duration="40000" />
     </task>
     <servers />
   </component>
